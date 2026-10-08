@@ -5,14 +5,12 @@ import Termostato from './components/Termostato';
 import reportWebVitals from './reportWebVitals';
 import Contador from './components/Contador';
 import EmpleadosOficios from './components/EmpleadosOficios';
-
+import HospitalesMultiple from './components/HospitalesMultiple';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Termostato temperaturaBase="20"/>
-    <Contador inicio="10"/>
-    <EmpleadosOficios/>
-  </React.StrictMode>
+    <div style={{margin: "auto", width: "50%"}}>
+        <HospitalesMultiple/>
+    </div>
 );
 
 // If you want to start measuring performance in your app, pass a function
