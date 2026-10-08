@@ -1,13 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Termostato from './components/Termostato';
 import reportWebVitals from './reportWebVitals';
+import Contador from './components/Contador';
+import EmpleadosOficios from './components/EmpleadosOficios';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Termostato temperaturaBase="20"/>
+    <Contador inicio="10"/>
+    <EmpleadosOficios/>
   </React.StrictMode>
 );
 
